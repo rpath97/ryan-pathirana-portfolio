@@ -1,0 +1,4 @@
+# Netlify config for portfolio
+[build]
+  publish = "mainfiles"
+  # No build command needed - static HTML
