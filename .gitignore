@@ -1,0 +1,16 @@
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE / Editor
+.idea
+.vscode
+*.swp
+*.swo
+*~
+
+# Optional: uncomment if you add node or env files later
+# node_modules
+# .env
+# .env.local
