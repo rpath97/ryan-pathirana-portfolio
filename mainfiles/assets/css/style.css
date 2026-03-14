@@ -695,6 +695,9 @@ main.drake-main {
     text-align: center;
     font-weight: 300;
 }
+.left-sidebar .email {
+    font-size: 20px;
+}
 .left-sidebar .address {
     margin-bottom: 30px;
 }
