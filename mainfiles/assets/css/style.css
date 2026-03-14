@@ -2016,3 +2016,10 @@ body .body-overlay {
     object-fit: contain;
 }
 
+/* JavaScript logo sizing in My Advantages */
+.skills .skill-inner img.js-logo {
+    width: 41px;
+    height: 60px;
+    object-fit: contain;
+}
+
