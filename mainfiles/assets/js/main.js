@@ -59,7 +59,6 @@ $(function(){
             $('.scroll-to-page').each(function(i) {
 
                 var wscrolldecress = windscroll + 1;
-                console.log(wscrolldecress);
                 if ($(this).position().top <= wscrolldecress - 0) {
                     $('.scroll-nav .scroll-to.active').removeClass('active');
                     $('.scroll-nav .scroll-to').eq(i).addClass('active');
@@ -147,9 +146,7 @@ $(function(){
     //     }
     // });
 
-    window.addEventListener('scroll', {
-        scroll_animations,
-    });
+    // ScrollTrigger handles scrolling for the animations initialized below.
 
 
     // Array.prototype.slice.call(document.querySelectorAll(".page-section")).forEach(function (e, t) {
