@@ -1032,6 +1032,25 @@ body .body-overlay {
     display: block;
     margin: auto auto 29px auto;
 }
+.skills .skill .skill-inner .skill-mark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 29px auto;
+    border-radius: 14px;
+    background: #f4f4f4;
+    color: #151515;
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+.skills .skill .skill-inner .skill-mark-wide {
+    width: auto;
+    min-width: 86px;
+    padding: 0 10px;
+}
 .skills .skill .skill-inner h1 {
     font-size: 30px;
     color: var(--primary_color);
