@@ -30,7 +30,17 @@
 <style>
 .portfolio-items .portfolio-item.noryx-project .portfolio-item-inner { height: auto; background: transparent; }
 .portfolio-items .portfolio-item.noryx-project .portfolio-item-inner > a { display: block; aspect-ratio: 3 / 1; }
-.portfolio-items .portfolio-item.noryx-project .portfolio-item-inner img { height: 100%; width: 100%; object-fit: contain; }
+.portfolio-items .portfolio-item.noryx-project .portfolio-item-inner img {
+    height: 100%;
+    width: auto;
+    max-width: 100%;
+    margin: 0 auto;
+    object-fit: contain;
+    border: 1px solid rgba(191, 255, 0, 0.3);
+    border-radius: 14px;
+    box-shadow: 0 0 18px rgba(191, 255, 0, 0.14);
+}
+.portfolio-items .portfolio-item.noryx-project .portfolio-item-inner > a { padding: 8px; }
 @media (max-width: 767px) {
     .portfolio-items .portfolio-item.noryx-project .portfolio-item-inner > a { aspect-ratio: 1672 / 941; }
 }
