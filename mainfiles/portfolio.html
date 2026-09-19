@@ -29,8 +29,11 @@
 
 <style>
 .portfolio-items .portfolio-item.noryx-project .portfolio-item-inner { height: auto; background: #080d09; }
-.portfolio-items .portfolio-item.noryx-project .portfolio-item-inner > a { display: block; }
-.portfolio-items .portfolio-item.noryx-project .portfolio-item-inner img { height: auto; width: 100%; object-fit: contain; }
+.portfolio-items .portfolio-item.noryx-project .portfolio-item-inner > a { display: block; aspect-ratio: 3 / 1; }
+.portfolio-items .portfolio-item.noryx-project .portfolio-item-inner img { height: 100%; width: 100%; object-fit: contain; }
+@media (max-width: 767px) {
+    .portfolio-items .portfolio-item.noryx-project .portfolio-item-inner > a { aspect-ratio: 1672 / 941; }
+}
 .portfolio-items .portfolio-item.noryx-project .portfolio-item-inner .portfolio-categories { position: static; margin: 0; padding: 16px 20px 20px; }
 </style>
 </head>
