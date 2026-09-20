@@ -49,6 +49,73 @@
     .portfolio-items .portfolio-item.framed-project .portfolio-item-inner > a { aspect-ratio: 1672 / 941; }
 }
 .portfolio-items .portfolio-item.framed-project .portfolio-item-inner .portfolio-categories { position: static; margin: 0; padding: 16px 20px 20px; }
+
+.portfolio-items .portfolio-item.unified-project {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.portfolio-items .portfolio-item.unified-project .portfolio-item-inner {
+    height: auto;
+    background: transparent;
+}
+.portfolio-items .portfolio-item.unified-project .portfolio-item-inner > a {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    padding: 0;
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.03);
+}
+.portfolio-items .portfolio-item.unified-project .portfolio-item-inner img {
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    margin: 0;
+    object-fit: cover;
+    object-position: center;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+}
+.portfolio-items .portfolio-item.unified-project.tictactoe-project .portfolio-item-inner img {
+    object-position: center 22%;
+}
+.portfolio-items .portfolio-item.unified-project .portfolio-categories {
+    position: static;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 18px 0 0;
+    padding: 0;
+}
+.portfolio-items .portfolio-item.unified-project .portfolio-categories li {
+    margin: 0;
+}
+.portfolio-items .portfolio-item.unified-project h2 {
+    margin: 22px 0 8px;
+}
+.portfolio-items .portfolio-item.unified-project .project-description {
+    min-height: 48px;
+    margin: 0 0 8px;
+    color: #999;
+    line-height: 1.55;
+}
+.portfolio-items .portfolio-item.unified-project .project-demo {
+    margin: auto 0 0;
+    padding-top: 4px;
+}
+@media (max-width: 767px) {
+    .portfolio-items .portfolio-item.unified-project .portfolio-item-inner > a {
+        aspect-ratio: 4 / 3;
+    }
+    .portfolio-items .portfolio-item.unified-project .project-description {
+        min-height: 0;
+    }
+}
+
 </style>
 </head>
 <body class="home1-page">
@@ -440,7 +507,7 @@
         
                             <div class="row portfolio-items">
                                 <div class="col-md-6 scroll-animation" data-animation="fade_from_bottom">
-                                    <div class="portfolio-item portfolio-full framed-project pes-project">
+                                    <div class="portfolio-item portfolio-half framed-project pes-project unified-project">
                                         <div class="portfolio-item-inner">
                                             <a href="https://github.com/rpath97/PesFootscray2" target="_blank" rel="noopener">
                                                 <img src="./assets/images/pes-footscray.png" alt="PesFootscray2 - Western Health Display">
@@ -464,12 +531,13 @@
                                             </ul>
                                         </div>
                                         <h2><a href="https://github.com/rpath97/PesFootscray2" target="_blank" rel="noopener">PES Footscray — Hospital Smart TV System</a></h2>
-                                        <p><a href="https://pesfootscray-portfolio.onrender.com" target="_blank" rel="noopener">Try the live demo <i class="las la-external-link-alt"></i></a></p>
+                                        <p class="project-description">Interactive hospital smart TV interface for patient entertainment, information and services.</p>
+                                        <p class="project-demo"><a href="https://pesfootscray-portfolio.onrender.com" target="_blank" rel="noopener">Try the live demo <i class="las la-external-link-alt"></i></a></p>
                                     </div>
                                 </div>
         
                                 <div class="col-md-6 scroll-animation" data-animation="fade_from_left">
-                                    <div class="portfolio-item portfolio-half noryx-project framed-project">
+                                    <div class="portfolio-item portfolio-half noryx-project framed-project unified-project">
                                         <div class="portfolio-item-inner">
                                             <a href="https://github.com/rpath97/commerce-operations-platform" target="_blank" rel="noopener">
                                                 <img src="./assets/images/noryx-cover.webp" alt="Noryx e-commerce operations platform cover" width="1672" height="941" loading="lazy">
@@ -482,12 +550,13 @@
                                             </ul>
                                         </div>
                                         <h2><a href="https://github.com/rpath97/commerce-operations-platform" target="_blank" rel="noopener">Noryx — E-Commerce Operations Platform</a></h2>
-                                        <p><a href="https://commerce-operations-platform.onrender.com" target="_blank" rel="noopener">Explore the live demo <i class="las la-external-link-alt"></i></a></p>
+                                        <p class="project-description">E-commerce operations platform for inventory, order workflows and business analytics.</p>
+                                        <p class="project-demo"><a href="https://commerce-operations-platform.onrender.com" target="_blank" rel="noopener">Explore the live demo <i class="las la-external-link-alt"></i></a></p>
                                     </div>
                                 </div>
 
                                 <div class="col-md-6 scroll-animation" data-animation="fade_from_right">
-                                    <div class="portfolio-item portfolio-half">
+                                    <div class="portfolio-item portfolio-half framed-project unified-project">
                                         <div class="portfolio-item-inner">
                                             <a href="https://github.com/rpath97/job-tracker" target="_blank" rel="noopener">
                                                 <img src="./assets/images/job-tracker-blue.webp" alt="Job Tracker">
@@ -511,7 +580,8 @@
                                             </ul>
                                         </div>
                                         <h2><a href="https://github.com/rpath97/job-tracker" target="_blank" rel="noopener">Job Tracker</a></h2>
-                                        <p><a href="https://job-tracker-chi-six.vercel.app/" target="_blank" rel="noopener">Try the live demo <i class="las la-external-link-alt"></i></a></p>
+                                        <p class="project-description">Full-stack application for tracking job applications, interviews and offers with secure cloud-backed accounts.</p>
+                                        <p class="project-demo"><a href="https://job-tracker-chi-six.vercel.app/" target="_blank" rel="noopener">Try the live demo <i class="las la-external-link-alt"></i></a></p>
                                     </div>
                                 </div>
         
@@ -555,7 +625,7 @@
                                 -->
 
                                 <div class="col-md-6 scroll-animation" data-animation="fade_from_bottom">
-                                    <div class="portfolio-item portfolio-half">
+                                    <div class="portfolio-item portfolio-half framed-project unified-project tictactoe-project">
                                         <div class="portfolio-item-inner">
                                             <a href="https://github.com/rpath97/TicTacToe-js" target="_blank" rel="noopener">
                                                 <img src="./assets/images/tic-tac-toe-cover.jpg" alt="Horse vs Rose Tic Tac Toe">
@@ -576,8 +646,8 @@
                                             </ul>
                                         </div>
                                         <h2><a href="https://github.com/rpath97/TicTacToe-js" target="_blank" rel="noopener">Horse vs Rose — Tic Tac Toe</a></h2>
-                                        <p>Responsive strategy game with three difficulty levels, Minimax AI, match scoring and local multiplayer.</p>
-                                        <p><a href="https://rpath97.github.io/TicTacToe-js/" target="_blank" rel="noopener">Play the live demo <i class="las la-external-link-alt"></i></a></p>
+                                        <p class="project-description">Responsive strategy game with three difficulty levels, Minimax AI, match scoring and local multiplayer.</p>
+                                        <p class="project-demo"><a href="https://rpath97.github.io/TicTacToe-js/" target="_blank" rel="noopener">Play the live demo <i class="las la-external-link-alt"></i></a></p>
                                     </div>
                                 </div>
 
