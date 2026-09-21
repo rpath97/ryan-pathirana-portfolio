@@ -352,6 +352,63 @@
     }
 }
 
+
+/* Compact skills grid */
+@media (min-width: 992px) {
+    .skills-area {
+        padding-top: 52px;
+        padding-bottom: 26px;
+    }
+
+    .skills-area .section-header {
+        margin-bottom: 22px;
+    }
+
+    .skills.row {
+        row-gap: 8px;
+    }
+
+    .skills.row > .col-md-3 {
+        flex: 0 0 20%;
+        max-width: 20%;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .skills .skill {
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    .skills .skill .skill-inner {
+        min-height: 178px;
+        padding: 26px 8px 22px;
+        margin-bottom: 10px;
+        border-width: 1px;
+        border-radius: 58px;
+    }
+
+    .skills .skill .skill-inner img {
+        width: auto !important;
+        max-width: 68px;
+        height: 44px !important;
+        margin: 0 auto 14px;
+        object-fit: contain;
+    }
+
+    .skills .skill .skill-inner h1,
+    .skills .skill .percent {
+        font-size: 24px;
+        line-height: 1;
+    }
+
+    .skills .skill p,
+    .skills .skill .name {
+        font-size: 12px;
+        line-height: 1.25;
+    }
+}
+
 </style>
 </head>
 <body class="home1-page">
